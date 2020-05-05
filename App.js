@@ -7,14 +7,15 @@
  */
 
 import React from "react";
-import { SafeAreaView, Text, StatusBar } from "react-native";
+import { SafeAreaView, StatusBar } from "react-native";
+import RootNavigator from "./src/navigation/RootNavigator";
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <Text>Welcome app</Text>
+      <SafeAreaView style={{ flex: 1 }}>
+        <RootNavigator />
       </SafeAreaView>
     </>
   );
