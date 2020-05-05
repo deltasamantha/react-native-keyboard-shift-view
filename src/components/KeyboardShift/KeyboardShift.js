@@ -13,7 +13,7 @@ const ANIMATION_DURATION = 400;
  *
  */
 
-export default class KeyboardShift extends Component {
+export class KeyboardShift extends Component {
     state = {
         shift: new Animated.Value(0)
     }
